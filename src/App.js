@@ -89,7 +89,7 @@ class App extends Component {
                   <li><NavLink to="/education" activeClassName="active">Education</NavLink></li>
                   {/* <li><NavLink to="/todo" activeClassName="active">To-Do</NavLink></li> */}
                   <li><NavLink to="/colophon" activeClassName="active">Colophon</NavLink></li>
-                  <li><a href="https://github.com/wllgrnt/"><FontAwesomeIcon icon={faGithub} color="white" transform="grow-10" /></a></li>
+                  <li><a href="https://github.com/wllgrnt/sideprojects-reactwebsite"><FontAwesomeIcon icon={faGithub} color="white" transform="grow-10" /></a></li>
                 </ul>
               </Menu>
             }

@@ -1,0 +1,6 @@
+*.*~
+build
+*.tar.gz
+.*.un~
+node_modules
+__snapshots__

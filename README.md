@@ -15,6 +15,7 @@ This repo provides the website hosted at [wpg.io](wpg.io), a basic vanity page b
 - [ ]  Enumerate website goals, update README
 - [ ] Unit tests
 
+
 ### Website requirements
 
 - Lightweight: it's only a vanity page/cv/list of hobby projects, I shouldn't force anyone to download megabytes of cruft to look at it.
@@ -22,6 +23,7 @@ This repo provides the website hosted at [wpg.io](wpg.io), a basic vanity page b
 - Integrated with D3: lots of my viz work is in D3, and it'd be good to host that directly.
 - Modern: this whole project is a learning exercise, so I might as well learn the current web-dev dogma.
 - CRUD interface? It'd be good if I could learn how to roll my own CRUD service, for blogging/further websites.
+- PWA: I plan to make an app with React-Native, but making a progressive web app that works nicely on mobile and that could be deployed on the app store might be better?
 
 ### Tech Stack
 

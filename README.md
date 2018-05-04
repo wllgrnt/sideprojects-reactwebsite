@@ -14,6 +14,7 @@ This repo provides the website hosted at [wpg.io](wpg.io), a basic vanity page b
 - [ ]  Write a colophon, giving the libraries and tools used in the process and documenting the rationale behind the choices.
 - [ ]  Enumerate website goals, update README
 - [ ] Unit tests
+- [ ] Analytics?
 
 
 ### Website requirements

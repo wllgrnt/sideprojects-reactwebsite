@@ -1,6 +1,6 @@
 # ReactWebsite
 
-This repo provides the website hosted at [wpg.io](wpg.io), a basic vanity page built using React. The project is intended to be a learning exercise, and is likely to contain anti-patterns and bad software engineering. pull requests and comments welcome!
+This repo provides the website hosted at [wpg.io](https://wpg.io), a basic vanity page built using React. The project is intended to be a learning exercise, and is likely to contain anti-patterns and bad software engineering. pull requests and comments welcome!
 
 
 

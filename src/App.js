@@ -13,6 +13,15 @@ import ResponsiveMenu from './navbar.js';
 import styled from 'styled-components';
 import { FaBars, FaClose } from 'react-icons/lib/fa';
 
+import ReactGA from 'react-ga';
+ReactGA.initialize(' UA-103801480-1 ');
+
+function fireTracking() {
+  ReactGA.pageview(window.location.pathname + window.location.search);
+  console.log(window.location.pathname + window.location.search)
+}
+
+
 const Menu = styled.div`
   // border-bottom: 2px solid MediumPurple;
   ul {
@@ -69,7 +78,9 @@ const NameHeader = styled.div`
 class App extends Component {
 
   render() {
+    fireTracking();
     return (
+
       <HashRouter>
         <div>
         <NameHeader><h1>William Grant</h1></NameHeader>

@@ -34,7 +34,10 @@ const Education = () => (
         <Container>
           <SectionHeader accent="rgba(157, 43, 65, 0.2)">
             <h3>Education</h3>
-            <p>I spent eight years in academia; that time is condensed into about four paragraphs below. </p>
+            <p>
+              I spent eight years in academia; that time is condensed into about
+              four paragraphs below.{' '}
+            </p>
 
             {/* <h1 style={{ marginTop: '0.25em', marginBottom: '0.5em' }}>
               Saturday, the 23rd of May
@@ -74,7 +77,7 @@ const Education = () => (
               <p>
                 My PhD was based in the Physics department, supervised by Dr.
                 Sebastian Ahnert. I also have an MPhil in Scientific Computing.
-                I'll explain what happened here later on! 
+                I'll explain what happened here later on!
                 <br />
                 <br />
               </p>

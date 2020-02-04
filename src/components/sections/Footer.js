@@ -5,7 +5,7 @@ import { Container } from '@components/global'
 import ExternalLink from '@common/ExternalLink'
 
 import GithubIcon from '@static/icons/github.svg'
-import TwitterIcon from '@static/icons/twitter.svg';
+import TwitterIcon from '@static/icons/twitter.svg'
 
 const SOCIAL = [
   {
@@ -16,7 +16,7 @@ const SOCIAL = [
     icon: TwitterIcon,
     link: 'https://twitter.com/wllgrnt',
   },
-];
+]
 
 const Footer = () => (
   <FooterWrapper>

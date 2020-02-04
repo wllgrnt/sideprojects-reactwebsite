@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 
 const SEO_DATA = {
   description: 'Will Grants homepage',
-  title: "Will Grants homepage",
+  title: 'Will Grants homepage',
   url: '',
   author: 'wpg',
   keywords: ['gatsby', 'site', 'personal'],

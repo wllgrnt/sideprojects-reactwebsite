@@ -8,7 +8,10 @@ const IndustryWork = () => (
     <Container>
       <SectionHeader accent="rgba(236, 150, 58, 0.2)">
         <h3>Industry Experience</h3>
-        <p>My main love is Python, but I've had the chance to try several other technologies in a professional context.</p>
+        <p>
+          My main love is Python, but I've had the chance to try several other
+          technologies in a professional context.
+        </p>
       </SectionHeader>
       <Grid>
         <ExperiencePanel>

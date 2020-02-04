@@ -42,7 +42,7 @@
     "start": "npm run dev",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
-    "deploy": "gatsby build && scp -r build/* server185:~/public_html/",
+    "deploy": "gatsby build && scp -r public/* server185:~/public_html/",
     "clean": "rm -rf .cache && rm -rf public"
   },
   "devDependencies": {
@@ -53,7 +53,7 @@
     "url": "https://github.com/wllgrnt/sideprojects-reactwebsite.git"
   },
   "bugs": {
-    "url": "+https://github.com/wllgrnt/sideprojects-reactwebsite/issues"
+    "url": "https://github.com/wllgrnt/sideprojects-reactwebsite/issues"
   },
   "homepage": "https://wpg.io"
 

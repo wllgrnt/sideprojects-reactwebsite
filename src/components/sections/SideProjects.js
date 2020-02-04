@@ -9,15 +9,16 @@ const SideProjects = () => (
   <StaticQuery
     query={graphql`
       query {
-
-        bartracker: file(sourceInstanceName: { eq: "art" }, name: { eq: "bartracker" }) {
-            childImageSharp {
-              fluid(maxWidth: 760) {
-                ...GatsbyImageSharpFluid_withWebp_tracedSVG
-              }
+        bartracker: file(
+          sourceInstanceName: { eq: "art" }
+          name: { eq: "bartracker" }
+        ) {
+          childImageSharp {
+            fluid(maxWidth: 760) {
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
-  
+        }
 
         islr: file(
           sourceInstanceName: { eq: "art" }
@@ -39,29 +40,41 @@ const SideProjects = () => (
             <p>
               I've spent a lot of time coding up other things, normally in an
               effort to teach myself something, and other in colloboration with
-              my PhD officemates. These will probably get spun into blog posts shortly.
+              my PhD officemates. These will probably get spun into blog posts
+              shortly.
             </p>
           </SectionHeader>
           <Grid inverse>
             <div>
               <h2>Barbell Tracking</h2>
               <p>
-              A neural network, trained on weightlifters, which recognises the bounding box for a barbell - the centroid of this bounding box is then tracked through the course of a video using OpenCV (the object detection and tracking all work, but integrating this into a app/website proved more difficult). </p>
+                A neural network, trained on weightlifters, which recognises the
+                bounding box for a barbell - the centroid of this bounding box
+                is then tracked through the course of a video using OpenCV (the
+                object detection and tracking all work, but integrating this
+                into a app/website proved more difficult).{' '}
+              </p>
             </div>
             <Art small>
-                <Img fluid={data.bartracker.childImageSharp.fluid} />
-                <Caption>The bar tracker as applied to a Dip Snatch.</Caption>
+              <Img fluid={data.bartracker.childImageSharp.fluid} />
+              <Caption>The bar tracker as applied to a Dip Snatch.</Caption>
             </Art>
           </Grid>
           <Grid>
             <Art>
               <Img fluid={data.islr.childImageSharp.fluid} />
-              <Caption>A single decision tree (overfitting), applied to the OJ dataset from ISLR. We predict whether a customer buys Citrus Hill or Minute Maid orange juice.</Caption>
+              <Caption>
+                A single decision tree (overfitting), applied to the OJ dataset
+                from ISLR. We predict whether a customer buys Citrus Hill or
+                Minute Maid orange juice.
+              </Caption>
             </Art>
             <div>
               <h2>Introduction to Statistical Learning</h2>
               <p>
-                Solutions to all the exercises in James et al.’s book, using Python and the Numpy/SKLearn/Pandas data science stack, rather than R.
+                Solutions to all the exercises in James et al.’s book, using
+                Python and the Numpy/SKLearn/Pandas data science stack, rather
+                than R.
               </p>
             </div>
           </Grid>
@@ -144,8 +157,5 @@ const Video = ({ videoSrcURL, videoTitle, ...props }) => (
     />
   </div>
 )
-
-
-
 
 export default SideProjects

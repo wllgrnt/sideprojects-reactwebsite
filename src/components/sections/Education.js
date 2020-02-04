@@ -9,7 +9,10 @@ const Education = () => (
   <StaticQuery
     query={graphql`
       query {
-        epidemic: file(sourceInstanceName: { eq: "art" }, name: { eq: "sis" }) {
+        epidemic: file(
+          sourceInstanceName: { eq: "images" }
+          name: { eq: "sis" }
+        ) {
           childImageSharp {
             fluid(maxWidth: 760) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
@@ -18,7 +21,7 @@ const Education = () => (
         }
 
         ubiquitin: file(
-          sourceInstanceName: { eq: "art" }
+          sourceInstanceName: { eq: "images" }
           name: { eq: "research_image" }
         ) {
           childImageSharp {

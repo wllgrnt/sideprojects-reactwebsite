@@ -10,8 +10,8 @@ const Header = () => (
   <StaticQuery
     query={graphql`
       query {
-        art_presentation: file(
-          sourceInstanceName: { eq: "art" }
+        presentation: file(
+          sourceInstanceName: { eq: "images" }
           name: { eq: "presentation" }
         ) {
           childImageSharp {
@@ -54,7 +54,7 @@ const Header = () => (
               </p>
             </Text>
             <Art>
-              <Img fluid={data.art_presentation.childImageSharp.fluid} />
+              <Img fluid={data.presentation.childImageSharp.fluid} />
             </Art>
           </Grid>
         </Container>

@@ -10,7 +10,7 @@ const SideProjects = () => (
     query={graphql`
       query {
         bartracker: file(
-          sourceInstanceName: { eq: "art" }
+          sourceInstanceName: { eq: "images" }
           name: { eq: "bartracker" }
         ) {
           childImageSharp {
@@ -21,7 +21,7 @@ const SideProjects = () => (
         }
 
         islr: file(
-          sourceInstanceName: { eq: "art" }
+          sourceInstanceName: { eq: "images" }
           name: { eq: "decisiontree" }
         ) {
           childImageSharp {
@@ -144,18 +144,5 @@ const Caption = styled.div`
   ${props => props.theme.font_size.tiny};
   color: ${props => props.theme.color.black.regular};
 `
-const Video = ({ videoSrcURL, videoTitle, ...props }) => (
-  <div className="video">
-    <iframe
-      src={videoSrcURL}
-      title={videoTitle}
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-      frameBorder="0"
-      webkitallowfullscreen="true"
-      mozallowfullscreen="true"
-      allowFullScreen
-    />
-  </div>
-)
 
 export default SideProjects

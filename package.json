@@ -1,46 +1,60 @@
 {
-  "name": "WillGrantHomepage",
-  "version": "0.1.0",
+  "name": "wpg",
   "private": true,
+  "description": "Will Grant's homepage",
+  "version": "0.1.0",
+  "author": "Will Grant <hello@wpg.io>",
   "dependencies": {
-    "@fortawesome/fontawesome": "^1.1.5",
-    "@fortawesome/fontawesome-free-brands": "^5.0.10",
-    "@fortawesome/react-fontawesome": "0.0.18",
-    "classnames": "^2.2.5",
-    "font-awesome": "^4.7.0",
-    "lodash": "^4.17.4",
-    "material-ui": "^1.0.0-beta.43",
-    "npm": "^6.0.0",
-    "prop-types": "^15.5.10",
-    "react": "^15.6.2",
-    "react-dom": "^15.6.2",
-    "react-icons": "^2.2.7",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.10",
-    "styled-components": "^3.2.6"
+    "@svgr/webpack": "^4.1.0",
+    "classnames": "^2.2.6",
+    "formik": "^2.1.1",
+    "gatsby": "^2.0.76",
+    "gatsby-image": "^2.0.20",
+    "gatsby-plugin-alias-imports": "^1.0.5",
+    "gatsby-plugin-google-fonts": "^0.0.4",
+    "gatsby-plugin-manifest": "^2.0.9",
+    "gatsby-plugin-offline": "^2.0.16",
+    "gatsby-plugin-react-helmet": "^3.0.2",
+    "gatsby-plugin-sharp": "^2.0.14",
+    "gatsby-plugin-styled-components": "^3.0.7",
+    "gatsby-plugin-svgr": "^2.0.2",
+    "gatsby-source-filesystem": "^2.0.8",
+    "gatsby-transformer-sharp": "^2.1.8",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-anchor-link-smooth-scroll": "^1.0.11",
+    "react-collapsible": "^2.6.0",
+    "react-dom": "^16.6.3",
+    "react-helmet": "^5.2.0",
+    "react-scrollspy": "^3.3.5",
+    "react-select": "^3.0.8",
+    "styled-components": "^4.1.3",
+    "yup": "^0.28.0"
   },
+  "keywords": [
+    "vanity",
+    "gatsby"
+  ],
+  "license": "MIT",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "build": "gatsby build",
+    "dev": "gatsby develop",
+    "start": "npm run dev",
+    "format": "prettier --write \"src/**/*.js\"",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "deploy": "gatsby build && scp -r build/* server185:~/public_html/",
+    "clean": "rm -rf .cache && rm -rf public"
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
-  "main": "index.js",
   "devDependencies": {
-    "enzyme": "^2.9.1",
-    "react-addons-test-utils": "^15.6.0",
-    "react-test-renderer": "^15.6.1"
+    "prettier": "^1.15.2"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wllgrnt/sideprojects-reactwebsite.git"
+    "url": "https://github.com/wllgrnt/sideprojects-reactwebsite.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wllgrnt/sideprojects-reactwebsite/issues"
+    "url": "+https://github.com/wllgrnt/sideprojects-reactwebsite/issues"
   },
   "homepage": "https://wpg.io"
+
 }

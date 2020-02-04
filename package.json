@@ -1,0 +1,60 @@
+{
+  "name": "wpg",
+  "private": true,
+  "description": "Will Grant's homepage",
+  "version": "0.1.0",
+  "author": "Will Grant <hello@wpg.io>",
+  "dependencies": {
+    "@svgr/webpack": "^4.1.0",
+    "classnames": "^2.2.6",
+    "formik": "^2.1.1",
+    "gatsby": "^2.0.76",
+    "gatsby-image": "^2.0.20",
+    "gatsby-plugin-alias-imports": "^1.0.5",
+    "gatsby-plugin-google-fonts": "^0.0.4",
+    "gatsby-plugin-manifest": "^2.0.9",
+    "gatsby-plugin-offline": "^2.0.16",
+    "gatsby-plugin-react-helmet": "^3.0.2",
+    "gatsby-plugin-sharp": "^2.0.14",
+    "gatsby-plugin-styled-components": "^3.0.7",
+    "gatsby-plugin-svgr": "^2.0.2",
+    "gatsby-source-filesystem": "^2.0.8",
+    "gatsby-transformer-sharp": "^2.1.8",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-anchor-link-smooth-scroll": "^1.0.11",
+    "react-collapsible": "^2.6.0",
+    "react-dom": "^16.6.3",
+    "react-helmet": "^5.2.0",
+    "react-scrollspy": "^3.3.5",
+    "react-select": "^3.0.8",
+    "styled-components": "^4.1.3",
+    "yup": "^0.28.0"
+  },
+  "keywords": [
+    "vanity",
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby develop",
+    "start": "npm run dev",
+    "format": "prettier --write \"src/**/*.js\"",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "deploy": "gatsby build && scp -r build/* server185:~/public_html/",
+    "clean": "rm -rf .cache && rm -rf public"
+  },
+  "devDependencies": {
+    "prettier": "^1.15.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wllgrnt/sideprojects-reactwebsite.git"
+  },
+  "bugs": {
+    "url": "+https://github.com/wllgrnt/sideprojects-reactwebsite/issues"
+  },
+  "homepage": "https://wpg.io"
+
+}

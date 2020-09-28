@@ -38,7 +38,7 @@ const Education = () => (
           <SectionHeader accent="rgba(157, 43, 65, 0.2)">
             <h3>Education</h3>
             <p>
-              I spent eight years in academia; that time is condensed into about
+              I spent four years as an undergraduate getting a BA and MSci, and four years as a postgraduate getting an MPhil and PhD. That time is condensed into about
               four paragraphs below.{' '}
             </p>
 

@@ -34,7 +34,8 @@ const Header = () => (
               </h1>
               {/* <br /> */}
               <p>
-                I'm Will, and I've just finished my PhD in Physics at the
+                I'm Will, and I'm a data scientist/engineer/analyst at a fintech startup. 
+                I did my PhD in Physics at the
                 University of Cambridge. This website explains who I am, what
                 I've done, and also lets me learn some React (which is why it's
                 unnecessarily fancy)
